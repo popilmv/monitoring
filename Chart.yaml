@@ -1,0 +1,6 @@
+apiVersion: v2
+name: prometheus
+descriptions: prometheus
+type: application
+version: 25.8.0
+appVersion: "2.48.0"

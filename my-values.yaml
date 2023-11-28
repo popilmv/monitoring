@@ -1,0 +1,8 @@
+server:
+  persistentVolume:
+    enabled: false  # Вимкнення персистентного зберігання
+
+alertmanager:
+  persistentVolume:
+    enabled: false  # Вимкнення персистентного зберігання
+
