@@ -5,7 +5,7 @@ metadata:
   namespace: default
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"  # Вимкнення редиректу на HTTPS
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"  #щоб не переспрямовувало на https
 spec:
   rules:
     - host: grafana.mari1327.pp.ua
