@@ -73,5 +73,5 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
 Also apply ingress for grafana.mari1327.pp.ua (templates/grafana-ingress.yaml)
 
 
-
+After that we have 2 subdomain url for grafana and prometheus separately
 
