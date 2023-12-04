@@ -1,0 +1,13 @@
+write:
+  persistence:
+    storageClass: pd-for-loki
+read:
+  persistence:
+    storageClass: pd-for-loki
+backend:
+  persistence:
+    storageClass: pd-for-loki
+singleBinary:
+  persistence:
+    storageClass: pd-for-loki
+
