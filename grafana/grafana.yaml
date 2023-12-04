@@ -38,4 +38,12 @@ spec:
             url: http://loki.default.svc:3100
             access: proxy
             isDefault: false
+    dashboards:
+      default:
+        prometheus-stats:
+          gnetId: 2
+          revision: 2
+          datasource: Prometheus
+      my-dashboard:
+        url: https://github.com/rfmoz/grafana-dashboards/blob/master/prometheus/node-exporter-full.json
 
