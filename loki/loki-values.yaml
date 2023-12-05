@@ -11,7 +11,7 @@ spec:
       version: 5.39.0
       sourceRef:
         kind: HelmRepository
-        name: loki
+        name: grafana
         namespace: default
   interval: 15m
   timeout: 5m
