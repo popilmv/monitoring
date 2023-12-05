@@ -13,11 +13,12 @@ metadata:
   name: promtail
   namespace: default
 spec:
+  releaseName: promtail
   interval: 5m
   chart:
     spec:
       chart: grafana/promtail
-      version: '6.15.3'
+      version: 6.15.3
       sourceRef:
         kind: HelmRepository
         name: promtail
