@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: promtail
-  namespace: flux-system
+  namespace: default
 spec:
   interval: 15m
   url: https://github.com/grafana/helm-charts/tree/main/charts/promtail
