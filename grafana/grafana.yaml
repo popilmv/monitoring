@@ -13,7 +13,7 @@ metadata:
   name: grafana
   namespace: default
 spec:
-  releaseName: grafana
+  releaseName: grafana/grafana
   chart:
     spec:
       chart: grafana/grafana
