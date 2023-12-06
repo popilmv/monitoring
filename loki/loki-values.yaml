@@ -16,7 +16,7 @@ spec:
   releaseName: loki
   chart:
     spec:
-      chart: grafana/loki
+      chart: loki
       version: 5.39.0
       sourceRef:
         kind: HelmRepository
