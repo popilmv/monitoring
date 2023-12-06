@@ -16,7 +16,7 @@ spec:
   releaseName: nginx
   chart:
     spec:
-      chart: nginx-ingress
+      chart: nginx
       version: 1.0.2
       sourceRef:
         kind: HelmRepository
@@ -27,7 +27,7 @@ spec:
   values:
     ingress:
       enabled: true
-      ingressClassName: nginx-ingress
+      ingressClassName: nginx
       rules:
       - host: grafana2.mari1327.pp.ua
         http:
@@ -36,7 +36,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: heml-app-service
+                name: grafana
                 port:
                   number: 3000
       
