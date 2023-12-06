@@ -39,7 +39,7 @@ spec:
         datasources:
           - name: Prometheus
             type: prometheus
-            url: http://prometheus.mari1327.pp.ua:31608
+            url: http://prometheus.default.svc:80
             access: proxy
             isDefault: true
           - name: Loki
