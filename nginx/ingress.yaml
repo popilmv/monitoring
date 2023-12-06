@@ -16,7 +16,7 @@ spec:
   releaseName: nginx
   chart:
     spec:
-      chart: nginx
+      chart: nginx-ingress
       version: 1.0.2
       sourceRef:
         kind: HelmRepository
