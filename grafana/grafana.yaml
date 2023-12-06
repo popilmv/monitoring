@@ -32,7 +32,7 @@ spec:
         kubernetes.io/ingress.class: nginx
         kubernetes.io/tls-acme: 'true'
       hosts:
-        - grafana2.mari1327.pp.ua
+        - grafana2.mari1327.pp.ua:30956
     datasources:
       datasources.yaml:
         apiVersion: 1
