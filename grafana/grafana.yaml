@@ -16,7 +16,7 @@ spec:
   releaseName: grafana
   chart:
     spec:
-      chart: grafana/grafana
+      chart: grafana
       version: 7.0.11
       sourceRef:
         kind: HelmRepository
