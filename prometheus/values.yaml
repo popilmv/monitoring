@@ -16,7 +16,7 @@ spec:
   releaseName: prometheus
   chart:
     spec:
-      chart: prometheus-community/prometheus
+      chart: prometheus
       version: 25.8.0
       sourceRef:
         kind: HelmRepository
