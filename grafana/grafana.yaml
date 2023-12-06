@@ -39,12 +39,12 @@ spec:
         datasources:
           - name: Prometheus
             type: prometheus
-            url: http://prometheus.default.svc:80
+            url: http://prometheus-server.default.svc:80
             access: proxy
             isDefault: true
           - name: Loki
             type: loki
-            url: http://loki.default.svc:3100
+            url: http://loki-gateway.default.svc:3100
             access: proxy
             isDefault: false
     dashboards:
