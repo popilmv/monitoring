@@ -28,8 +28,6 @@ spec:
     ingress:
       enabled: true
       ingressClassName: nginx
-      annotations:
-        kubernetes.io/ingress.class: nginx
       hosts:
         - grafana2.mari1327.pp.ua:31566
     datasources:
