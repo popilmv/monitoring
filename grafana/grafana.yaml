@@ -25,29 +25,14 @@ spec:
   interval: 15m
   timeout: 5m
   values:
-    ingress:
-      enabled: true
-      ingressClassName: nginx
-      rules:
-      - host: grafana2.mari1327.pp.ua
-        http:
-          paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: grafana
-                port:
-                  number: 3000
+    service:
+      type: LoadBalancer
     datasources:
-      datasources.yaml:
-        apiVersion: 1
-        datasources:
-          - name: Prometheus
-            type: prometheus
-            url: http://prometheus-server.default.svc:80
-            access: proxy
-            isDefault: true
+      - name: Prometheus
+        type: prometheus
+        url: http://prometheus-server.default.svc:80
+        access: proxy
+        isDefault: true
     dashboards:
       default:
         prometheus-stats:
