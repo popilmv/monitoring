@@ -19,3 +19,4 @@ data:
         url: http://loki-gateway.default:3100
         access: proxy
         isDefault: false
+        editable: true
