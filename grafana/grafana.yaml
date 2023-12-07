@@ -29,9 +29,11 @@ spec:
       type: LoadBalancer
     datasources:
       datasources.yaml:
-      - name: Prometheus
-        type: prometheus
-        url: http://prometheus-server.default.svc.cluster.local
-        access: proxy
-        isDefault: true
+        apiVersion: 1
+        datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server.default.svc.cluster.local
+          access: proxy
+          isDefault: true
 
