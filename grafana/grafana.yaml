@@ -30,4 +30,4 @@ spec:
     sidecar:
       datasources:
         enabled: true
-        label: grafana_my_label #my label in config Map
+        label: grafana_my_label # my label in config Map
