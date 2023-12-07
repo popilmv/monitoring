@@ -24,6 +24,9 @@ spec:
         namespace: default
   interval: 15m
   timeout: 5m
+gateway:
+  basicAuth:
+    enabled: true
 #  values:
 #    write:
 #      persistence:
