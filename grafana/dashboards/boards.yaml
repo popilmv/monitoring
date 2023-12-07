@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: prometheus-dashboard
+  labels:
+    grafana_my_label: "1"
+dashboards:
+  default:
+    prometheus-stats:
+      gnetId: 2
+      revision: 2
+      datasource: Prometheus
+  my-dashboard:
+    url: https://github.com/rfmoz/grafana-dashboards/blob/master/prometheus/node-exporter-full.json
