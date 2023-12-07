@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   namespace: default
   name: sidecar-configmap-dashboard
+  annotations:
+  k8s-sidecar-target-directory: "/tmp/dashboards/exporter"
   labels:
     grafana_my_dashboard: "1"
 data:
