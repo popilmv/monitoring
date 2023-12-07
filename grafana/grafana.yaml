@@ -27,5 +27,8 @@ spec:
   values:
     service:
       type: LoadBalancer
+  sidecar:
+    datasources:
+      enabled: true
 
 
