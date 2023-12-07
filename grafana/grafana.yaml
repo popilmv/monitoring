@@ -48,11 +48,6 @@ spec:
             url: http://prometheus-server.default.svc:80
             access: proxy
             isDefault: true
-          - name: Loki
-            type: loki
-            url: http://loki-gateway.default.svc:3100
-            access: proxy
-            isDefault: false
     dashboards:
       default:
         prometheus-stats:
