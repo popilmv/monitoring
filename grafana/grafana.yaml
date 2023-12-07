@@ -31,9 +31,9 @@ spec:
       datasources:
         enabled: true
         label: grafana_my_label #my label in config Map
-      dashboards:
-        enabled: true
-        label: grafana_my_dashboard 
+ #     dashboards:
+ #       enabled: true
+ #       label: grafana_my_dashboard 
       dashboards:
         default:
           prometheus-stats:
