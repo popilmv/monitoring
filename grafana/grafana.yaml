@@ -28,8 +28,17 @@ spec:
     ingress:
       enabled: true
       ingressClassName: nginx
-      hosts:
-        - grafana2.mari1327.pp.ua:31566
+      rules:
+      - host: grafana2.mari1327.pp.ua
+        http:
+          paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: grafana
+                port:
+                  number: 3000
     datasources:
       datasources.yaml:
         apiVersion: 1
