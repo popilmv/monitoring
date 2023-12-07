@@ -33,11 +33,4 @@ spec:
         url: http://prometheus-server.default.svc:80
         access: proxy
         isDefault: true
-    dashboards:
-      default:
-        prometheus-stats:
-          gnetId: 2
-          revision: 2
-          datasource: Prometheus
-      my-dashboard:
-        url: https://github.com/rfmoz/grafana-dashboards/blob/master/prometheus/node-exporter-full.json
+
