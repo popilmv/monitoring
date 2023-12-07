@@ -16,6 +16,6 @@ data:
         isDefault: true
       - name: Loki
         type: loki
-        url: http://loki-gateway.default.svc.cluster.local
+        url: http://loki-gateway.default:3100
         access: proxy
         isDefault: false
