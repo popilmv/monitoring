@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: sidecar-configmap-prom
+  labels:
+    grafana_datasource: "1"
+data:
+  config-datasourceforgrafana.yaml: |-
+      apiVersion: 1
+      datasources:
+      - name: Prometheus
+        type: prometheus
+        url: http://prometheus-server.default.svc.cluster.local
+        access: proxy
+        isDefault: true
