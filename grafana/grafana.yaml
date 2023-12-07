@@ -34,5 +34,13 @@ spec:
       dashboards:
         enabled: true
         label: grafana_my_dashboard 
-
+      dashboards:
+        default:
+          prometheus-stats:
+            gnetId: 2
+            revision: 2
+            datasource: Prometheus
+          my-dashboard:
+            url: https://github.com/rfmoz/grafana-dashboards/blob/master/prometheus/node-exporter-full.json
+      
 
