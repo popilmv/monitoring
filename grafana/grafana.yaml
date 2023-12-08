@@ -27,17 +27,18 @@ spec:
   values:
     service:
       type: LoadBalancer
-    sidecar:
-      datasources:
-        enabled: true
-        label: grafana_my_label # my label in config Map
-      dashboards:
-        enabled: true
-        label: grafana_my_dashboard 
-        annotations:
-          grafana_folder: "My-Folder"
-        folder: /tmp/dashboards
-        folderAnnotation: grafana_folder
-        provider:
-          allowUiUpdates: true
-
+    grafana:
+      sidecar:
+        datasources:
+          enabled: true
+          label: grafana_my_label # my label in config Map
+        dashboards:
+          enabled: true
+          label: grafana_my_dashboard 
+          annotations:
+            grafana_folder: "KUBE-STATE-METRICS"
+          folder: /tmp/dashboards
+          folderAnnotation: grafana_folder
+          provider:
+            allowUiUpdates: true
+      defaultDashboardsTimezone: 'Europe/Kyiv'
