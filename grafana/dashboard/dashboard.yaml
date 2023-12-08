@@ -4,7 +4,7 @@ metadata:
   namespace: default
   name: grafana-dashboard
   annotations:
-    grafana_folder: Exporter
+    grafana_folder: "Exporter"
 #    k8s-sidecar-target-directory: "/tmp/dashboards/exporter"
   labels:
     grafana_my_dashboard: "1"
